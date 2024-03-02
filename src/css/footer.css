@@ -1,14 +1,20 @@
+:root {
+  --font-family: "Inter Tight", sans-serif;
+}
+
+
 body {
-    font-family: "Inter Tight", sans-serif;
-      font-optical-sizing: auto;
-      font-style: normal;
-  }
+  font-optical-sizing: auto;
+  font-style: normal;
+  height: 100%;
+}
 
 ul {
   list-style-type: none;
 }
 
 a {
+  font-family: "Inter Tight", sans-serif;
   text-decoration: none;
   color: #fff;
 }
@@ -53,12 +59,20 @@ a {
   line-height: 133%;
   letter-spacing: -0.01em;
   color: rgba(251, 251, 251, 0.5);
-  
 }
+
+.privacy-policy-item {
+  margin-right: 8px;
+}
+
+.privacy-policy-cookie {
+  margin-left: 8px;
+}
+
 .privacy-author {
-   text-align: right;
-   margin: 0;
-   float: right;
+  text-align: right;
+  margin: 0;
+  float: right;
 
 
 }
@@ -74,7 +88,7 @@ a {
   }
 
   .footer-logo-text {
-    width: 310px;
+      width: 310px;
   }
 
   .footer-nav-menu-item {
@@ -82,20 +96,28 @@ a {
       margin-left: -41px;
   }
 
-  .footer-phone ,.footer-address-link{
+  .footer-phone,
+  .footer-address-link {
       margin-left: -41px;
-  }    
+  }
 
   .privacy-policy-item {
       text-align: left;
       padding-top: 60px;
-      margin: 0;
-      
+      /* margin: 0; */
+
+  }
+
+  .privacy-policy-cookie {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 133%;
+      letter-spacing: -0.01em;
   }
 
   .privacy-policy {
       margin-top: 80px;
-  
+
   }
 
 
@@ -104,76 +126,82 @@ a {
 /* /\/\/\ TABLET /\/\/\ */
 
 @media screen and (min-width: 768px) {
-      .footer {
-          padding: 32px;
-          /* height: 479px; */
-      }
+  .footer {
+      padding: 32px;
+      height: 479px;
+  }
 
-      .footer-logo {
-        width: 230px;
-      }
+  .footer-logo {
+      width: 230px;
+  }
 
-      .footer-logo-text {
-          width: 230px;
-      }
-      .footer-nav-menu-list {
-          gap: 10px;
-          display:flex;
-          float: right;
-          flex-direction: column;
-          margin-block: -120px;
-      }
-      .footer-phone,
-      .footer-address-link {
-          display: flex;
-          float: right;
-          flex-direction: column;
-          margin-top: 20px;
-          margin-left: -130px;
-          gap:30px;
-      }
-
-      .privacy-policy-item {
-          text-align: left;
-          padding-top: 60px;
-          margin: 0;
-      }
+  .footer-logo-text {
+      width: 230px;
       
-      .privacy-policy {
-          margin-top: 200px;
-      }
+  }
+
+  .footer-nav-menu-list {
+      gap: 25px;
+      display: flex;
+      float: right;
+      flex-direction: column;
+      margin-block: -100px;
+  }
+
+  .footer-phone,
+  .footer-address-link {
+      display: flex;
+      float: right;
+      flex-direction: column;
+      margin-top: 64px;
+      margin-left: -130px;
+      gap: 25px;
+  }
+
+  .privacy-policy-item {
+      text-align: left;
+      padding-top: 60px;
+      /* margin: 0; */
+  }
+
+  .privacy-policy {
+      margin-top: 310px;
+  }
 }
 
 /* /\/\/\ DESKTOP /\/\/\ */
-@media screen and (min-width: 890px) and (max-width: 1280px) {
-    .footer {
-        padding: 50px 100px;
-        height: 391px;
-    }
-    .footer-nav-menu-list {
-        gap: 10px;
-        display:flex;
-        float: right;
-        flex-direction: column;
-        margin-block: -120px;
-        margin-inline-end: 230px;
-    }
-    .footer-phone,
-    .footer-address-link {
-        display: flex;
-        float: right;
-        flex-direction: column;
-        margin-block: -130px;
-        margin-left: -130px;
-        gap:30px;
-    }
+@media screen and (min-width: 890px) and (max-width: 1440px) {
+  .footer {
+      padding: 50px 100px;
+      height: 391px;
+  }
 
-    .privacy-policy-item {
-        text-align: left;
-        padding-top: 40px;
-        margin: 0;
-    }
-    .privacy-policy {
-        margin-top: 150px;
-    }
+  .footer-nav-menu-list {
+      gap: 10px;
+      display: flex;
+      float: right;
+      flex-direction: column;
+      margin-block: -100px;
+      margin-inline-end: 230px;
+  }
+
+  .footer-phone,
+  .footer-address-link {
+      display: flex;
+      float: right;
+      flex-direction: column;
+      margin-block: -100px;
+      margin-left: -130px;
+      gap: 30px;
+  }
+
+  .privacy-policy-item {
+      text-align: left;
+      padding-top: 40px;
+      /* margin: 0; */
+  }
+
+  .privacy-policy {
+      margin-top: 150px;
+  }
 }
